@@ -1,0 +1,118 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font family and background color */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f8f9fa; /* Set a light background color */
+    color: #333; /* Set text color */
+}
+
+/* Center content horizontally and vertically */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align items in a column */
+    min-height: 100vh; /* Ensure container stretches to at least the height of the viewport */
+    padding: 20px;
+}
+
+/* Set logo size */
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px; /* Add some space below the logo */
+}
+
+/* Box container styles */
+.box-container {
+    background-color: #fff; /* Set a white background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0; /* Add margin above and below the boxes */
+    width: 100%;
+    max-width: 600px; /* Limit box width for better readability */
+    text-align: center; /* Center text inside the boxes */
+}
+
+/* Style FAQ items */
+.faq-item {
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    background-color: #007bff; /* Set a primary color */
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add some space between FAQ items */
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Add smooth transition effect */
+}
+
+/* Hover effect for FAQ items */
+.faq-item:hover {
+    background-color: #0056b3; /* Darken the color on hover */
+}
+
+/* Style FAQ answer */
+.faq-answer {
+    display: none; /* Hide FAQ answer by default */
+    padding: 15px;
+    border-radius: 5px;
+    color: #333;
+    background-color: #f8f9fa; /* Set a light background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-top: 10px; /* Add some space above the answer */
+}
+
+/* Visible style for FAQ answer */
+.faq-answer-visible {
+    display: block; /* Show FAQ answer when visible */
+}
+
+/* Right align text */
+.right-align {
+    text-align: right;
+}
+
+/* Telegram button style */
+.telegram-card .btn {
+    background-color: #007bff; /* Set a primary color */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+    display: block;
+    text-align: center;
+    margin-top: 20px; /* Add some space above the button */
+    width: 100%;
+}
+
+/* Style the "محاسبه قیمت" button */
+.calculate-price-card .btn {
+    background-color: #007bff; /* Set a primary color */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px; /* Reduce padding for smaller button */
+    transition: background-color 0.3s ease;
+    border: none; /* Remove border */
+    margin-top: 20px; /* Add some space above the button */
+}
+
+/* Add margin between questions */
+.faq-question {
+    margin-bottom: 10px;
+}
+
+/* Set font of محاسبه قیمت button and questions to Tahoma */
+.btn, .faq-item {
+    font-family: Tahoma, sans-serif;
+}
