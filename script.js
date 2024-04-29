@@ -15,13 +15,13 @@ function calculateFiP() {
    
     var fiP;
     if (oP < 100) {
-        fiP = oP * 1.13;
+        fiP = oP * 1.1;
     } else if (oP < 500) {
-        fiP = oP * 1.09;
+        fiP = oP * 1.07;
     } else if (oP < 1000) {
-        fiP = oP * 1.06;
-    } else {
         fiP = oP * 1.04;
+    } else {
+        fiP = oP * 1.03;
     }
 
     var totalPrice = fiP + (w * 0.015) + 2;
