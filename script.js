@@ -45,7 +45,7 @@ function calculateFiP() {
         fiP = oP * 1.03;
     }
 
-    var totalPrice = fiP + (w * 0.015) + 1;
+    var totalPrice = fiP + (w * 0.015) + 2;
 
     document.getElementById("result").innerHTML = "<strong>قیمت نهایی تحویل در ایران (به یورو): </strong>" + "<strong>" + totalPrice.toFixed(2) + "</strong>";
 
