@@ -40,7 +40,7 @@ function calculateFiP() {
     } else if (oP < 500) {
         fiP = oP * 1.07;
     } else if (oP < 1000) {
-        fiP = oP * 1.04;
+        fiP = oP * 1.05;
     } else {
         fiP = oP * 1.03;
     }
