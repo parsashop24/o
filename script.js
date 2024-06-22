@@ -34,13 +34,13 @@ function calculateFiP() {
     var oP = parseFloat(document.getElementById("oP").value);
     var w = parseFloat(document.getElementById("w").value);
    
-    var fiP;
+   var fiP;
     if (oP < 100) {
         fiP = (oP * 1.10) - 1;
     } else if (oP < 500) {
-        fiP = oP * 1.07;
+        fiP = 1/16 (oP-100) + 10;
     } else if (oP < 1000) {
-        fiP = oP * 1.05;
+        fiP = 3/100 (oP-500) + 35;
     } else {
         fiP = oP * 1.04;
     }
