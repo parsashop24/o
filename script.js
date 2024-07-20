@@ -36,16 +36,16 @@ function calculateFiP() {
    
    var fiP;
     if (oP < 100) {
-        fiP = (oP * 1.10) - 1;
+        fiP = (oP * 1.10) +1;
     } else if (oP < 500) {
-        fiP = oP + (0.0625 * (oP-100) ) + 10;
+        fiP = oP + (0.0625 * (oP-100) ) + 11;
     } else if (oP < 1000) {
-        fiP = oP + (0.03 * (oP-500) ) + 35;
+        fiP = oP + (0.03 * (oP-500) ) + 37;
     } else {
-        fiP = oP * 1.04;
+        fiP = (oP * 1.04) + 2;
     }
 
-    var totalPrice = fiP + (w * 0.015) + 1;
+    var totalPrice = fiP + (w * 0.015) ;
 
     document.getElementById("result").innerHTML = "<strong>قیمت نهایی تحویل در ایران (به یورو): </strong>" + "<strong>" + totalPrice.toFixed(2) + "</strong>";
 
