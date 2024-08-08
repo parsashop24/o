@@ -49,7 +49,7 @@ function calculateFiP() {
 
     var tomanPrice = totalPrice * 66.500 ;
 
-    document.getElementById("result").innerHTML = "<strong>قیمت نهایی تحویل در ایران (به یورو): </strong>" + "<strong>" + totalPrice.toFixed(2) + "</strong>";
+    document.getElementById("result").innerHTML = "قیمت نهایی تحویل در ایران (به یورو): " + "<strong>" + totalPrice.toFixed(2) + "</strong>";
 
-    document.getElementById("additionalInfo").innerHTML = "<strong>قیمت نهایی تحویل در ایران (به تومان): </strong>" + "<strong>" + tomanPrice.toFixed(3) + "</strong>";
+    document.getElementById("additionalInfo").innerHTML = "قیمت نهایی تحویل در ایران (به تومان): " + "<strong>" + tomanPrice.toFixed(3) + "</strong>";
 }
