@@ -47,7 +47,7 @@ function calculateFiP() {
 
     var totalPrice = fiP + (w * 0.015) ;
 
-    var tomanPrice = totalPrice * 65.800 ;
+    var tomanPrice = totalPrice * 65.900 ;
  
 var formattedTomanPrice = tomanPrice.toLocaleString();
 
