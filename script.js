@@ -54,5 +54,5 @@ var formattedTomanPrice = tomanPrice.toLocaleString();
     
     document.getElementById("result").innerHTML = "قیمت نهایی تحویل در ایران (به یورو): " + "<strong>" + totalPrice.toFixed(2) + "</strong>";
 
-    document.getElementById("additionalInfo").innerHTML = "قیمت نهایی تحویل در ایران (به تومان): " + "<strong>" + formattedTomanPrice  + "</strong>";
+  
 }
