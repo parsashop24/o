@@ -35,17 +35,17 @@ function calculateFiP() {
     var w = parseFloat(document.getElementById("w").value);
    
    var fiP;
-    if (oP < 100) {
-        fiP = (oP * 1.10) +1;
+    if (oP < 200) {
+        fiP = (oP * 1.10);
     } else if (oP < 500) {
-        fiP = oP + (0.0625 * (oP-100) ) + 11;
+        fiP = (oP * 1.07);
     } else if (oP < 1000) {
-        fiP = oP + (0.03 * (oP-500) ) + 37;
+        fiP = (oP * 1.05);
     } else {
-        fiP = (oP * 1.04) + 2;
+        fiP = (oP * 1.03) ;
     }
 
-    var totalPrice = fiP + (w * 0.015) ;
+    var totalPrice = fiP + (w * 0.02) ;
 
     var tomanPrice = totalPrice * 66.700 ;
  
