@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // JavaScript code for calculating price
 function calculateFiP() {
     var oP = parseFloat(document.getElementById("oP").value);
-    var w = parseFloat(document.getElementById("w").value);
+
    
    var fiP;
     if (oP < 200) {
@@ -45,7 +45,7 @@ function calculateFiP() {
         fiP = (oP * 1.03) ;
     }
 
-    var totalPrice = fiP + (w * 0.02) ;
+    var totalPrice = fiP  ;
 
     var tomanPrice = totalPrice * 66.700 ;
  
