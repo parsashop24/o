@@ -35,19 +35,21 @@ function calculateFiP() {
     var w = parseFloat(document.getElementById("w").value);
    
    var fiP;
-    if (oP < 200) {
-        fiP = (oP * 1.10);
+    if (oP < 40) {
+        fiP = (oP + 5);
+  } else if (oP < 200) {
+        fiP = (oP * 1.15);        
     } else if (oP < 500) {
         fiP = (oP * 1.07);
     } else if (oP < 1000) {
         fiP = (oP * 1.05);
     } else {
-        fiP = (oP * 1.03) ;
+        fiP = (oP * 1.04) ;
     }
 
-    var totalPrice = fiP + (w * 0.02) ;
+    var totalPrice = fiP + (w * 0.023) ;
 
-    var tomanPrice = totalPrice * 66.700 ;
+ 
  
 var formattedTomanPrice = tomanPrice.toLocaleString();
 
@@ -56,3 +58,4 @@ var formattedTomanPrice = tomanPrice.toLocaleString();
 
   
 }
+
